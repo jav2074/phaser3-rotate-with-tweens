@@ -75,12 +75,21 @@ class ScenePresentacion extends Phaser.Scene
 
 
         const particles = this.add.particles('red');
-        const emitter = particles.createEmitter({
+        this.emitter = particles.createEmitter({
             speed: 100,
             scale: { start: 1, end: 0 },
             blendMode: 'ADD'
         });
-        emitter.startFollow(this.arrow);
+        // emitter.startFollow(this.arrow);
+
+        const particles2 = this.add.particles('blue');
+        const emitter2 = particles2.createEmitter({
+            speed: 100,
+            scale: { start: 1, end: 0 },
+            blendMode: 'ADD'
+        });
+        emitter2.startFollow(this.arrow);
+
 
         // InPuts
         this.input.on(Phaser.Input.Events.POINTER_UP, this.handlePointerUp, this);
@@ -125,6 +134,8 @@ class ScenePresentacion extends Phaser.Scene
         const targetDeg = Phaser.Math.RadToDeg(targetRad);
         const targetDeg2 = ((targetDeg + 360) % 360);
         this.textPOINT.setText("Point: " + targetDeg2.toFixed(2));
+
+        this.emitter.startFollow(pointer);
     }
 
 
