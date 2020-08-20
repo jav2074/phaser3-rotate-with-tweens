@@ -13,9 +13,6 @@ class Bootloader extends Phaser.Scene
 
         // buttons
         this.load.setPath('./assets/img/buttons');
-        this.load.atlas('buttons_wood', 
-                        'button.png', 
-                        'button_atlas.json');
         this.load.atlas('buttons_1', 
                         'button1.png', 
                         'button1_atlas.json');
@@ -24,7 +21,6 @@ class Bootloader extends Phaser.Scene
         this.load.setPath('./assets/img/logo');
         // arrow_250x50
         this.load.spritesheet('arrow', 'arrow_250x50.png', { frameWidth: 250, frameHeight: 50 });
-        // Culo_Win__logo
         
         // IMGs
         this.load.setPath('./');

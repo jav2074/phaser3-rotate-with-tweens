@@ -36,7 +36,7 @@ class ScenePresentacion extends Phaser.Scene
         //     scale: { start: 1, end: 0 },
         //     blendMode: 'ADD'
         // })
-        // const logo = this.physics.add.image(400, 100, 'kombat_logo')
+        // const logo = this.physics.add.image(400, 100, 'logo')
         // logo.setVelocity(100, 200)
         // logo.setBounce(1, 1)
         // logo.setCollideWorldBounds(true)
@@ -62,7 +62,6 @@ class ScenePresentacion extends Phaser.Scene
         
         
         // LOGOS
-        // this.arrow = this.add.image(this.centerW, this.centerH, "kombat_logo");
         this.arrow = this.add.sprite(this.centerW, this.centerH, "arrow");
         this.arrow.setScale(1.25).setOrigin(0.12, 0.5);
         this.anims.create({
@@ -73,6 +72,15 @@ class ScenePresentacion extends Phaser.Scene
             frameRate: 4,
             yoyo: false
         });
+
+
+        const particles = this.add.particles('red');
+        const emitter = particles.createEmitter({
+            speed: 100,
+            scale: { start: 1, end: 0 },
+            blendMode: 'ADD'
+        });
+        emitter.startFollow(this.arrow);
 
         // InPuts
         this.input.on(Phaser.Input.Events.POINTER_UP, this.handlePointerUp, this);
