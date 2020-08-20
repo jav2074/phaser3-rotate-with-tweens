@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------------------
+git init
+git add README
+git commit -m "first commit"
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+git push -u origin master
+-------------------------------------------------------------------------------------------
+Cambiar tu URL remota de SSH a HTTPS con el comando git remote set-url.
+git remote -v
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+-------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------
+echo "# phaser3-rotate-with-tweens" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/jav2074/phaser3-rotate-with-tweens.git
+git push -u origin master
+-------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------
+sprites:
+    http://www.sprites-unlimited.com
+softwares:
+    - ShoeBox.exe
+        https://www.gamedev.net/forums/topic/638930-shoebox-sprites-sheets-tiles-bitmap-fonts-all-in-one-toolbox/
+    - AtlasPacker
+        https://gammafp.com/tools/
+    - Generador de Logos
+        https://es.cooltext.com/
+-------------------------------------------------------------------------------------------
+Cómo cambiar el nombre de varios archivos con el Explorador de Windows
+-Inicie el Explorador de Windows. ...
+-Seleccione varios archivos de una carpeta. ...
+-Después de seleccionar los archivos, presione F2.
+-Escriba el nuevo nombre y presione ENTRAR.
+-------------------------------------------------------------------------------------------
+
+
