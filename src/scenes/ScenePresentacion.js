@@ -77,7 +77,7 @@ class ScenePresentacion extends Phaser.Scene
         const particles = this.add.particles('red');
         this.emitter = particles.createEmitter({
             speed: 100,
-            scale: { start: 1, end: 0 },
+            scale: { start: 0.5, end: 0 },
             blendMode: 'ADD'
         });
         // emitter.startFollow(this.arrow);
